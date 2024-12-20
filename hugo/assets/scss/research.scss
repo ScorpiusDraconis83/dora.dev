@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+h3 {
+    margin-top:1.5em;
+}
+
 #rotate-tip {
     display: none;
 }
@@ -10,7 +14,7 @@
     }
 }
 
-article {
+.hasSidebar article {
     padding:1rem;
 
     img {
@@ -92,4 +96,14 @@ tab_links {
             border-bottom: 2px solid $color-link;
         }
     }
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.research-note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: $color-text-medium;
 }

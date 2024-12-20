@@ -1,0 +1,21 @@
+{
+  "name": "dora-quick-check",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@magidoc/plugin-svelte-marked": "^4.1.4",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "sass": "^1.69.7",
+    "svelte": "^4.2.19",
+    "vite": "^5.4.6"
+  },
+  "dependencies": {
+    "vite-plugin-svelte-monorepo": "github:sveltejs/vite-plugin-svelte"
+  }
+}

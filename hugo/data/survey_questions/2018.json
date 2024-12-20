@@ -149,7 +149,7 @@
                     "questions": [
                         "Our features are sliced in a way that lend themselves to frequent production releases.",
 "Our features are decomposed in a way that allows a developer to complete the work in a week or less.",
-"Our work is decomposed into features that allow for minimum viable products (MVPs) and rapid development, rathr than complex and lengthy processes (an MVP has just enough features to get validated learning about the product & its continued development)."
+"Our work is decomposed into features that allow for minimum viable products (MVPs) and rapid development, rather than complex and lengthy processes (an MVP has just enough features to get validated learning about the product & its continued development)."
                 ]
                 }
             ]
@@ -202,6 +202,7 @@
             "question_groups": [
                 {
                     "description": "For each of the following performance indicators, how well did your organization meet its goals over the past year?",
+                    "group_responses": "Performed well above goals,Performed above goals,Performed slightly above goals,Met goals,Performed slightly below goals,Performed below goals,Performed well below goals,N/A or I don’t know",
                     "questions": [
                         "Your organization's overall performance",
 "Your organization's overall profitability",

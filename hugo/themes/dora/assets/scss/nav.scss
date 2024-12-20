@@ -14,28 +14,37 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: rgb(95, 99, 104);
-                    white-space:nowrap;
-                    font-weight: 400;
-                    font-size:1em;
-                    line-height:1em;
+                    color: hsl(208, 5%, 45%);
+                    white-space: nowrap;
+                    font-weight: 500;
+                    font-size: 1em;
+                    line-height: 1em;
+                    transition: all .3s ease;
+                    text-decoration: underline solid white;
 
                     span.google-material-icons {
                         font-size: 1em;
                         line-height: 1em;
-                        vertical-align:middle;
+                        vertical-align: middle;
                     }
                 }
 
                 a:hover {
-                    color: rgb(0, 0, 0);
+                    color: hsl(208, 5%, 25%);
+                    text-decoration: underline solid hsl(208, 5%, 80%);
+                    text-underline-offset: 0.5em;
                 }
 
                 a.active {
-                    color: black;
-                    font-weight: 600;
+                    color: hsl(208, 5%, 0%);
+                    text-decoration: underline solid hsl(208, 5%, 50%);
+                    text-underline-offset: 0.5em;
                 }
+            }
 
+            li#searchLinkMobile {
+                // if full menu shown, don't show mobile search link
+                display: none;
             }
         }
     }
@@ -148,18 +157,64 @@ header > nav > label > input[type="checkbox"] {
         background-color: rgba(0, 0, 0, 0.4);
         visibility: visible;
     }
+
+    #searchLinkMobile {
+        // if full menu hidden, search is a regular menu item
+        display: block !important;
+    }
+    #searchLinkDesktop {
+        display: none;
+    }
 }
 
 .site-banner {
-    background-color:$background-snipe;
-    padding:2pt;
+    background-color: var(--dora-highlight);
+    padding: 2pt;
     text-align: center;
 
     a {
         display: inline-block;
-        border-radius: .2em;
-        padding:2pt 6pt;
-        color: $color-text;
+        border-radius: 0.2em;
+        padding: 2pt 6pt;
+        color: var(--dora-primary-dark);
         font-weight: 500;
+    }
+}
+
+#searchInputPopover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+    height: 64px;
+    background-color: transparent;
+    width: 100%;
+
+    &:popover-open {
+        display: flex;
+    }
+
+    #searchInputPopoverFields {
+        display: grid;
+        justify-items: right;
+        align-items: center;
+        height: 100%;
+        animation: popoverAppear 0.2s ease-in;
+        width: 100%;
+
+        #searchForm {
+            width: 50em;
+        }
+    }
+}
+
+@keyframes popoverAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
