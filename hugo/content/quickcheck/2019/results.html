@@ -25,7 +25,7 @@ type: quickcheck_2019
     x-on:keydown.escape.window="isModalOpen = false"
     x-on:keydown.enter.window="isModalOpen = false">
     <h3>You're performing better than <span id="percentile">&nbsp;&nbsp;&nbsp;</span>&percnt; of 2019 <a href="https://cloud.google.com/devops/state-of-devops/" target="_blank">State&nbsp;of&nbsp;DevOps&nbsp;Survey</a> respondents.&nbsp;</h3>
-    <small>Take the Quick Check from other research years: <a href="/quickcheck/?year=2019">2019</a>&nbsp;&nbsp;<a href="/quickcheck/?year=2021">2021</a>&nbsp;&nbsp;<a href="/quickcheck/">2022</a></small>
+    <small>Take the Quick Check from other research years: <a href="/quickcheck/2023/">2023</a>&nbsp;&nbsp;<a href="/quickcheck/2022/">2022</a>&nbsp;&nbsp;<a href="/quickcheck/2021/">2021</a>&nbsp;&nbsp;<a href="/quickcheck/2019/">2019</a></small>
     <br><br>
     <button x-on:click="isModalOpen = true" aria-controls="share-modal">Share results</button>
     <a href='{{% relref "/quickcheck/" %}}'><button class="secondary">Start over</button></a>
@@ -56,7 +56,7 @@ type: quickcheck_2019
 </section>
 <section id="c_capabilities" class="tab">
 <div id="caps_unprioritized">
-    <h2>Key DevOps capabilities for <span class="profile-title">unknown</span> performers</h2>
+    <h2>Key capabilities for <span class="profile-title">unknown</span> performers</h2>
     <div class="description">
         <p >When we analyzed the responses of other <strong class="color-by-profile"><span class="profile-title">unknown</span> performers</strong>, we found that working on these three
             capabilities had the most impact on improving their software delivery performance.</p>
@@ -69,7 +69,7 @@ type: quickcheck_2019
         <div class="capabilities-container">
             <div class="rec">
                 <a  id="rec-link-0"
-                    href="/devops-capabilities/technical/version-control/"
+                    href="/capabilities/version-control/"
                     target="_blank">
                     <img src="https://www.google.com/images/icons/material/system/svg/assignment_turned_in_24px.svg" class="rec-img" id="rec-img-0" alt="Icon that represents this capability">
                     <p id="rec-name-0">Version control</p>
@@ -78,7 +78,7 @@ type: quickcheck_2019
             </div>
             <div class="rec">
                 <a  id="rec-link-1"
-                    href="/devops-capabilities/technical/version-control/"
+                    href="/capabilities/version-control/"
                     target="_blank">
                     <img src="https://www.google.com/images/icons/material/system/svg/assignment_turned_in_24px.svg" class="rec-img" id="rec-img-1" alt="Icon that represents this capability">
                     <p id="rec-name-1">Version control</p>
@@ -87,7 +87,7 @@ type: quickcheck_2019
             </div>
             <div class="rec">
                 <a  id="rec-link-2"
-                    href="/devops-capabilities/technical/version-control/"
+                    href="/capabilities/version-control/"
                     target="_blank">
                     <img src="https://www.google.com/images/icons/material/system/svg/assignment_turned_in_24px.svg" class="rec-img" id="rec-img-2" alt="Icon that represents this capability">
                     <p id="rec-name-2">Version control</p>
@@ -99,7 +99,7 @@ type: quickcheck_2019
 </div>
 
 <div id="caps_prioritized" >
-    <h2>Key DevOps capabilities recommended for you</h2>
+    <h2>Key capabilities recommended for you</h2>
     <div class="recommendations">
         <div x-data="{'isModalOpen': false}"  >
             <div class="header">
@@ -284,7 +284,7 @@ type: quickcheck_2019
 <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-label" aria-describedby="modal-content">
     <div class="wrapper">
 
-        <h1 id="modal-label" >DevOps capabilities assessment</h1>
+        <h1 id="modal-label" >Capabilities assessment</h1>
         <p >Answer the following questions to find out which capability you, as <strong class="color-by-profile">a <span class="profile-title">unknown</span> performer</strong>, should consider focusing on first.</p>
         <!-- Add in content from .js -->
         <div id="modal-content"></div>

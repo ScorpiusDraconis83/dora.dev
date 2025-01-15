@@ -10,6 +10,34 @@ type: "research_archives"
 
 This page lists errors and corrections to the 2023 Accelerate State of DevOps Report. To track revisions, report PDFs are stamped with a version number. The initial version of the 2023 report was `v.2023-10`. The latest version is [`v.2023-12`]({{< ref "/research/2023/dora-report" >}}).
 
+### Errata in `v.2023-12`
+
+**p.23** "Continuous integrations" should be "continuous integration"
+
+**p.26** "Writing code clocks" should be "Writing code blocks"
+
+**p.26** "Optimising code" should use the American spelling: "Optimizing" 
+
+**p.26** "Scaling" is misspelled as "Scailing"
+
+**p.30** Under "Resources to get started," "significantly increase the quality of documentation" should be "significantly increases..."
+
+**p.32** "see jump in productivity" should be "see a jump in productivity"
+
+**p.54** "a well-established psychological phenomena" should be "a well-established psychological phenomenon"
+
+**p.64** "Continuous intergration" should be "continuous integration"
+
+**p.74** "Stack Overflow Developer’s survey" should be "Stack Overflow Developer Survey"
+
+**p.78** The "number of employees" chart is sorted by value. It should be sorted by label.
+
+**p.78** In the "number of employees" chart, the row labeled "1 to 4" should be labeled "1" 
+
+**p.80** The graph label "% of time spend in office" should be "...spent in office"
+
+**p.83** The text describes a "solid black line" when in fact the lines are blue.
+
 ### Errata in `v.2023-10`
 
 **p.1** On the cover, the Sleuth logo is cut off _[Corrected in `v.2023-12`]_
@@ -35,5 +63,5 @@ This page lists errors and corrections to the 2023 Accelerate State of DevOps Re
 <div style="text-align:center; margin-top:2em;">
 Have you found an error the 2023 Accelerate State of DevOps Report? 
 
-<a href='{{< relref "/contact/" >}}?inquiry_type=Errata&errata_pub=Accelerate+State+of+DevOps+Report+2023' class='button'>Submit a change or correction</a>
+<a href='mailto:dora-advocacy@google.com?subject=DORA+State+of+DevOps+Report+2023+error+report' class='button' target="_blank">Submit a change or correction</a>
 </div>

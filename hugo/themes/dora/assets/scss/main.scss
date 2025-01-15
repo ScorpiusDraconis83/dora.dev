@@ -1,5 +1,4 @@
-@import url(//fonts.googleapis.com/css2?family=Google+Sans);
-@import url(//fonts.googleapis.com/css2?family=Google+Sans+Text);
+@import url(//fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;600;700;800;900);
 @import url(//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 @import "_variables.scss";
@@ -12,6 +11,15 @@
 @import "widgets.scss";
 @import "sidebar.scss";
 @import "footer.scss";
+@import "syntax-dora.scss";
+@import "search-input.scss";
+
+:root {
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 html {
     scrollbar-gutter: stable;
@@ -27,21 +35,31 @@ body {
     // use flex so footer sticks to bottom of page
     display: flex;
     flex-direction: column;
-    letter-spacing: 0.2px;
 
     main {
-        width:100%;
         flex-grow: 1;
         max-width: $layout-breakpoint-max;
         padding: 1.5rem 4rem 0.5rem 4rem;
         margin: auto;
 
+        li {
+            font-family: $font-roboto;
+            font-weight: 300;
+
+            strong, b, a {
+                font-family: $font-google-sans;
+                font-weight: 500;
+            }
+        }
+
         @include media-medium {
-            padding: .75em;
+            padding: 0.75em;
+            width: auto;
         }
 
         @include media-small {
-            padding: .5em;
+            padding: 0.5em;
+            width: auto;
         }
     }
 }
@@ -56,7 +74,7 @@ select {
     font-size: 1em;
 
     @include media-medium {
-        line-height:1.35;
+        line-height: 1.35;
     }
 }
 
@@ -102,7 +120,7 @@ section.banner {
         line-height: 1.75;
 
         p {
-            font-family: $font-google-sans-text;
+            font-family: $font-google-sans;
             font-weight: 300;
         }
 
@@ -126,7 +144,7 @@ section.banner {
     display: flex;
     flex-direction: row;
     margin-top: 3em;
-    border-top:1px solid $border-light;
+    border-top: 1px solid $border-light;
 
     @include media-medium {
         flex-direction: column;
@@ -143,12 +161,11 @@ section.banner {
             min-width: 25%;
             flex-grow: 1;
         }
-
     }
 }
 
 .google-material-icons {
-    font-family: 'Google Material Icons';
+    font-family: "Google Material Icons";
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
@@ -159,14 +176,40 @@ section.banner {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -webkit-font-feature-settings: 'liga';
+    -webkit-font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
+    cursor:pointer;
 
     &.divider-before {
-        border-left:1px solid $border-light;
+        border-left: 1px solid $border-light;
+    }
+}
+
+.source-available-repo {
+    text-decoration:none;
+    color:#5b5e66;
+}
+
+.source-available-project {
+    a {
+        text-decoration: none;
+        color:#202124;
+    }
+
+    .google-material-icons {
+        font-size: 14px;
+        text-decoration: none;
     }
 }
 
 // for alpinejs: hide cloaked elements while page is loading
-[x-cloak] { display: none !important; }
+[x-cloak] {
+    display: none !important;
+}
+
+.updated {
+    font-size:12px;
+    color:$color-text-light;
+    font-weight:200;
+}

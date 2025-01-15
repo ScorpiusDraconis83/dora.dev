@@ -4,12 +4,17 @@ theme = 'dora'
 rssLimit = 10
 ignoreFiles = "README.md"
 
-[markup.goldmark.renderer]
-unsafe= true
+[markup]
+    [markup.highlight]
+        noClasses = false
+
+    [markup.goldmark.renderer]
+        unsafe= true
 
 [params]
     Keywords = "DevOps, Lead time, Deploy frequency, Change fail rate, MTTR, Time to restore, metrics, DORA"
-    Description = "DevOps Research and Assessment (DORA) is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance."
+    Description = "DORA is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance."
+    DefaultSocialImage = "/img/misc/dora_social_image.png"
 
 [sitemap]
   changefreq = 'monthly'
@@ -18,7 +23,7 @@ unsafe= true
 
 [[cascade]]
   [cascade._target]
-    path = "**/README.md"
+    path = "**/docs"
   [cascade._build]
     render = "never"
     list = "never"

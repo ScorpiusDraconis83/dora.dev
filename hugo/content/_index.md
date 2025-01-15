@@ -1,77 +1,65 @@
 ---
-title: "DevOps Research and Assessment"
+title: "Get Better at Getting Better"
 date: 2022-11-22
 draft: false
 bannerTitle: "Get Better at Getting Better"
-bannerSubtitle: "DevOps Research and Assessment (DORA) is the largest and longest running research program of its kind, that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance."
+bannerSubtitle: "DORA is the largest and longest running research program of its kind, that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance."
 ---
 
-{{< article columns="2" 
-    title="The Accelerate State of DevOps Report 2023" 
+{{< article columns="2"
+    title="Accelerate State of DevOps Report 2024"
     url="https://cloud.google.com/devops/state-of-devops"
     cta="Read the Report"
-    img-src="/research/2023/dora-report/2023-dora-accelerate-state-of-devops-report.png"  
-    img-alt="The Accelerate State of DevOps Report 2023" 
+    img-src="/research/2024/dora-report/2024-dora-accelerate-state-of-devops-report.png"
+    img-alt="The Accelerate State of DevOps Report 2024"
     img-align="right"
     img-stroke="true"
     text-size-ratio="1.15"
     >}}
-For the last nine years, we've produced the State of DevOps report, hearing from over 36,000 professionals worldwide. 
+DORA has been investigating the capabilities, practices, and measures of high-performing technology-driven teams and organizations for over a decade. This is our tenth DORA report. We have heard from more than 39,000 professionals working at organizations of every size and across many different industries globally.
 
-We've outlined the DevOps practices that drive successful software delivery and operational performance, with a deep focus on user-centric design in the 2023 report.
+This report highlights the significant impact of AI on software development, explores platform engineering's promises and challenges, and emphasizes user-centricity and stable priorities for organizational success.
 
-Use these findings to accelerate organizational performance while reducing burnout.
 {{< /article >}}
 
-{{< article columns="1" 
-    title="DORA Quick Check" 
+{{< article columns="1"
+    title="DORA Quick Check"
     url="/quickcheck/"
-    cta="Take the Quick Check" 
-    img-src="/img/quickcheck/hero_illustration.svg" 
-    img-align="left" 
+    cta="Take the Quick Check"
+    img-src="/img/quickcheck/hero_illustration.svg"
+    img-align="left"
     >}}
+
 Use our quick check tool to discover how you compare to industry peers, identify specific capabilities you can use to improve performance, and make progress on your software delivery goals.
 {{< /article >}}
 
-{{< article columns="1" 
-    title="DORA Core" 
+{{< article columns="1"
+    title="How Gen AI Affects the Value of Development Work"
+    url="/research/2024/value-of-development-work/"
+    cta="Read more..."
+    img-src="/research/2024/dora-report-ai-preview-hero.png"
+    img-align="left"
+    >}}
+Discover the five key views of value and how organizations can help developers thrive with AI.
+
+{{< /article >}}
+
+{{< article columns="1"
+    title="Generative AI"
+    url="/guides/how-to-innovate-with-generative-ai/"
+    cta="Read the guide"
+    img-src="/guides/how-to-innovate-with-generative-ai/how-to-innovate-with-ai.png"
+    img-align="left"
+    >}}
+Leverage DORA's research findings to apply a holistic, iterative strategy as you experiment with and adopt emerging AI technologies. Learn how a focus on users can help ensure positive outcomes.
+{{< /article >}}
+
+{{< article columns="1"
+    title="DORA Core"
     url="/research/"
-    cta="Explore the model" 
-    img-src="/img/features/homepage-core-snipe.png" 
-    img-align="left" 
+    cta="Explore the model"
+    img-src="/img/features/homepage-core-snipe.png"
+    img-align="left"
     >}}
 DORA Core represents the most well-established findings across the history and breadth our research program. Use it to guide transformation efforts in your organization.
-{{< /article >}}
-
-{{< article 
-    columns="1" 
-    title="DevOps Awards" 
-    cta="See the Winners"
-    url="https://cloud.google.com/blog/topics/devops-awards" 
-    >}}
-The Winners of the DevOps Awards are implementing DevOps practices to drive organizational success and deliver high-quality customer experiences. Read about their journeys and learn how they applied a philosophy of continuous improvement.
-{{< /article >}}
-
-{{< article 
-    columns="1" 
-    title="The ROI of DevOps" 
-    url="https://cloud.google.com/resources/roi-of-devops-transformation-whitepaper"
-    cta="Read the Whitepaper"
-    img-src="/img/features/whitepaper-roi.png"
-    img-align="left"
-    img-stroke="true" >}}
-Organizations are constantly grappling to quantify the value of technology transformation. The whitepaper takes an analytical, data-driven approach to forecast the value and justify investment in DevOps transformations.
-{{< /article >}}
-
-{{< article 
-    columns="2" 
-    title="Vote for DORA in the DevOps Dozen Awards" 
-    url="https://www.surveymonkey.com/r/DevOpsDozen2023"
-    cta="Cast your vote"
-    img-src="/resources/img/2023_devopsdozen_vote.png"
-    img-align="left" 
-    delete_on="2024-01-01" >}}
-DORA's Accelerate State of DevOps Report has been nominated for *Best DevOps Survey/Analysis/Research*, which recognizes "research that has significantly and positively impacted the DevOps community." And DORA Advocate Amanda Lewis has been nominated for *Top DevOps Evangelist* in recognition of her leadership in the DORA Community.
-
-Public voting is now open. [**Cast your vote**](https://www.surveymonkey.com/r/DevOpsDozen2023) to share how DORA's research and community have benefited you!
 {{< /article >}}

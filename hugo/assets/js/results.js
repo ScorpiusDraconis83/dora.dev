@@ -61,6 +61,11 @@ function decoratePagewithProfileAndPercentage(userProfileAndPercentile) {
     document.getElementById('percentile-banner').classList.add('percentile_' + percentile_rounded);
     document.getElementById('percentile-banner').innerText = userProfileAndPercentile.percentile;
 
+    console.log('send `results` event to GA (disabled if `gtag` not found [e.g. when developing locally])')
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'quick_check_results');
+    }
+
 }
 
 function drawComparisonChart(constants, indicator, user_score, industry, show_legend) {
